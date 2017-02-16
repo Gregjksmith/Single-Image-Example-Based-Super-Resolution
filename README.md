@@ -13,8 +13,7 @@ cv::Mat* gs::superResolution(cv::Mat& inputImage, float upscale, int iterations,
 
 ### Paramaters
 
-cv::Mat& inputImage
-	Input low resolution image.
+**cv::Mat& inputImage**: *Input low resolution image.*
 
 float upscale
 	Upscaling factor. Must be greater than 1.
