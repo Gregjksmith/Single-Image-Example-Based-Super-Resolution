@@ -15,12 +15,19 @@ cv::Mat* **gs::superResolution**(cv::Mat& inputImage, float upscale, int iterati
 
 #### Paramaters
 **cv::Mat& inputImage**: *Input low resolution image.*
+
 **float upscale**: *Upscaling factor. Must be greater than 1.*
+
 **int iterations**: *Number of upscaling iterations performed. The final product is upscaled by a factor of 'upscale'.*
+
 **double lambda**: *Regularization weight.*
+
 **unsigned int patchSize**: *Patch size.*
+
 **unsigned int patchOverlap**: *Patch overlap.*
+
 **unsigned int neighborhoodSize**: *K-nearest neighbors used.*
+
 **double neighborhoodWeight**: *K-nearest neighbor scaling factor. Dictionary atoms are scaled based on the atom's distance from a low resolution patch.*
 
 
@@ -33,12 +40,21 @@ cv::Mat* **gs::superResolutionWavelet**(cv::Mat& inputImage, float upscale, int 
 
 #### Paramaters
 **cv::Mat& inputImage**: *Input low resolution image.*
+
 **float upscale**: *Upscaling factor. Must be greater than 1.*
+
 **int iterations**: *Number of upscaling iterations performed. The final product is upscaled by a factor of 'upscale'.*
+
 **double lambda**: *Regularization weight.*
+
 **unsigned int patchSize**: *Patch size.*
+
 **unsigned int patchOverlap**: *Patch overlap.*
+
 **unsigned int neighborhoodSize**: *K-nearest neighbors used.*
+
 **double neighborhoodWeight**: *K-nearest neighbor scaling factor. Dictionary atoms are scaled based on the atom's distance from a low resolution patch.*
+
 **int waveletP**: *upsampling wavelet factor.*
+
 **int waveletQ**: *downsampling wavelet factor. WaveletQ must be larger than waveletP.*
