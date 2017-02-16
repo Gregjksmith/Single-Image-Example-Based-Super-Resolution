@@ -14,25 +14,25 @@ cv::Mat* gs::superResolution(cv::Mat& inputImage, float upscale, int iterations,
 ### Paramaters
 
 cv::Mat& inputImage
-> Input low resolution image.
+	Input low resolution image.
 
 float upscale
-> Upscaling factor. Must be greater than 1.
+	Upscaling factor. Must be greater than 1.
 
 int iterations
-> Number of upscaling iterations performed. The final product is upscaled by a factor of 'upscale'.
+	Number of upscaling iterations performed. The final product is upscaled by a factor of 'upscale'.
 
 double lambda
-> Regularization weight. 
+	Regularization weight. 
 
 unsigned int patchSize
-> Patch size.
+	Patch size.
 
 unsigned int patchOverlap
-> Patch overlap.
+	Patch overlap.
 
 unsigned int neighborhoodSize
-> K-nearest neighbors used.
+	K-nearest neighbors used.
 
 double neighborhoodWeight
-> K-nearest neighbor scaling factor. Dictionary atoms are scaled based on the atom's distance from a low resolution patch.
+	K-nearest neighbor scaling factor. Dictionary atoms are scaled based on the atom's distance from a low resolution patch.
