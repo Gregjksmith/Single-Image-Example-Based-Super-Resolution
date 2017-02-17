@@ -105,4 +105,13 @@ int main()
 ## Results
 
 Input Image: 
-![input image](https://raw.githubusercontent.com/Gregjksmith/Single-Image-Example-Based-Super-Resolution/master/images/peppers256.tif?raw=true "input image")
+![input image](https://raw.githubusercontent.com/Gregjksmith/Single-Image-Example-Based-Super-Resolution/master/images/peppers256.png?raw=true)
+
+Super-resolved:
+![super-resolved](https://github.com/Gregjksmith/Single-Image-Example-Based-Super-Resolution/blob/master/images/imageSR.png?raw=true)
+
+Bicubic Interpolation:
+![bicubic interpolation](https://raw.githubusercontent.com/Gregjksmith/Single-Image-Example-Based-Super-Resolution/master/images/inputImage_interpolated.png?raw=true)
+
+Groud Truth:
+![ground truth](https://raw.githubusercontent.com/Gregjksmith/Single-Image-Example-Based-Super-Resolution/master/images/imageGT.png?raw=true)
