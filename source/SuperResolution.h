@@ -1,3 +1,33 @@
+/*
+Greg Smith 2016.
+
+Single image example-based Super-resolution using direct mapping of self-examples.
+
+We create a two dictionaries of self example wavelet patches: a high resolution dictionary and a low resolution dictionary.
+The high resolution patches are sampled directly from the input image and the low resolution patches are sample from the input 
+image passed through a low pass filter. We first upscale the image using bicubic interpolation. For each wavelet patch, he K-nearest 
+neighbor atoms are searched from the low resolution dictionary. The corresponding high resolution dictionary atoms are 
+combined to estimate a high resolution patch. The patches for each wavelet band and scale are combined to form the super-resolved 
+image.
+
+Gradual upscaling is performed to improve the SR results.
+
+Hyperparameters:
+
+float. Upscale. Upscaling factor. 
+int. Iterations. Number of iterations performed to achieve the desired upscaling.
+int. Patch Size. Dimension in pixels of the patch size. 
+int. Patch Overlap. Dimension in pixels of the patch overlap.
+float. Lambda. Regularization weight.
+int. Neighborhood Size. Number of nearest neighbors used in K-nearest neighbor search. 
+int. Neighborhood Weight. Atom exponential weighting variance. 
+
+Wavelet only hyperparameters:
+int. P. wavelet dilation factor p. 
+int. Q. wavelet dilation factor q. 
+
+*/
+
 #pragma once
 
 #define DEBUG_TEST 1
