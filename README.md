@@ -8,13 +8,13 @@ Performs example-based Super-resolution on an image using direct mapping between
 
 ### gs::superResolution
 
-cv::Mat* **gs::superResolution**(cv::Mat& inputImage, float upscale, int iterations, double lambda, unsigned int patchSize
+cv::Mat* **gs::superResolution**(cv::Mat inputImage, float upscale, int iterations, double lambda, unsigned int patchSize
 							unsigned int patchOverlap, unsigned int neighborhoodSize, double neighborhoodWeight);
 
 > gs::superResolution uses example patches from the input low resolution image to perform super-resolution.
 
 #### Paramaters
-**cv::Mat& inputImage**: *Input low resolution image.*
+**cv::Mat inputImage**: *Input low resolution image.*
 
 **float upscale**: *Upscaling factor. Must be greater than 1.*
 
@@ -33,13 +33,13 @@ cv::Mat* **gs::superResolution**(cv::Mat& inputImage, float upscale, int iterati
 
 ### gs::superResolutionWavelet
 
-cv::Mat* **gs::superResolutionWavelet**(cv::Mat& inputImage, float upscale, int iterations, double lambda, unsigned int patchSize
+cv::Mat* **gs::superResolutionWavelet**(cv::Mat inputImage, float upscale, int iterations, double lambda, unsigned int patchSize
 							unsigned int patchOverlap, unsigned int neighborhoodSize, double neighborhoodWeight, int waveletP, int waveletQ);
 
 > gs::superResolutionWavelet uses example wavelet patches from the input low resolution image to perform super-resolution.
 
 #### Paramaters
-**cv::Mat& inputImage**: *Input low resolution image.*
+**cv::Mat inputImage**: *Input low resolution image.*
 
 **float upscale**: *Upscaling factor. Must be greater than 1.*
 
@@ -59,7 +59,7 @@ cv::Mat* **gs::superResolutionWavelet**(cv::Mat& inputImage, float upscale, int 
 
 **int waveletQ**: *downsampling wavelet factor. WaveletQ must be larger than waveletP.*
 
-### Example
+## Example
 
 ```
 #include "SuperResolution.h"
@@ -101,3 +101,6 @@ int main()
 	gs::exportReportWavelet(imageLR, *s, imageGT, 2, 1, lambda, patchSize, patchOverlap, neighborhoodSize, neighborhoodWeight,waveletP,waveletQ);
 }
 ```
+
+## Results
+
