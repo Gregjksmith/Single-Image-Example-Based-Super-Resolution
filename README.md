@@ -92,9 +92,9 @@ int main()
 	/*export the report and images*/
 	gs::exportReport(imageLR, *imageSR, imageGT, upscale, iterations, lambda, patchSize, patchOverlap, neighborhoodSize, neighborhoodWeight);
 
-	int waveletP = 3;
-	int waveletQ = 4;
-	neighborhoodWeight = 0.0002;
+	int waveletP = 7;
+	int waveletQ = 8;
+	neighborhoodWeight = 4.0;
 	/*Super-resolve the image*/
 	Mat* imageSRWavelet = gs::superResolveWavelet(imageLR, upscale, iterations, lambda, patchSize, patchOverlap, neighborhoodSize, neighborhoodWeight, waveletP, waveletQ);
 	/*export the report and images*/
@@ -104,3 +104,5 @@ int main()
 
 ## Results
 
+Input Image: 
+![input image](https://raw.githubusercontent.com/Gregjksmith/Single-Image-Example-Based-Super-Resolution/master/images/peppers256.tif?raw=true "input image")
