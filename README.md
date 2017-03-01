@@ -116,6 +116,6 @@ int main()
 
 ![bicubic interpolation](https://raw.githubusercontent.com/Gregjksmith/Single-Image-Example-Based-Super-Resolution/master/images/inputImage_interpolated.png?raw=true)
 
-###Groud Truth:
+###Ground Truth:
 
 ![ground truth](https://raw.githubusercontent.com/Gregjksmith/Single-Image-Example-Based-Super-Resolution/master/images/imageGT.png?raw=true)
