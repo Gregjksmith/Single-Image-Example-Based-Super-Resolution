@@ -119,3 +119,7 @@ int main()
 ###Ground Truth:
 
 ![ground truth](https://raw.githubusercontent.com/Gregjksmith/Single-Image-Example-Based-Super-Resolution/master/images/imageGT.png?raw=true)
+
+## License
+
+This project is licensed under the terms of the MIT license.
