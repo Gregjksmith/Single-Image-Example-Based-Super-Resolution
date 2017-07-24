@@ -2,7 +2,16 @@
 
 ## Description
 
-Performs example-based Super-resolution on an image using direct mapping between high and low resolution patches. High and low resolution patches are taken directly from the input image. A direct mapping trasform is solved by using the k-nearest neighbor patches.
+Performs example-based Super-resolution on an image using direct mapping between high and low resolution patches. 
+
+Learning is done utilizing a self-example high-resolution, low-resolution coupled dictionary. Self-example means the dictionary is created from sampling patches from the input low resolution image. This approach is based on the observation that similar patches of a natural image occur within the same scale and between different scales. 
+
+An affine mapping approach is learned to transform a low resolution patch to its high resolution counterpart. This problem is ill-posed and hence we add a regularization term based on Tikhonov regularization.
+
+We take patches of the image in the wavelet domain to perform training and prediction. We expand the discrete wavelet basis by using a discrete rational wavelet transform. Results suggest that the increased sparsity and the larger basis help to improve the ill-posed nature of the problem.
+
+Super-resolution is performed through gradual upscaling. This method better retains low resolution patch structures and outperforms single step upscaling at higher upscaling rates. 
+
 
 ## API
 
