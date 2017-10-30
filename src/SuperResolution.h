@@ -1,7 +1,8 @@
 /*
 Greg Smith 2016.
 
-Single image example-based Super-resolution using direct mapping of self-examples.
+Single image example-based Super-resolution using direct mapping of self-examples. based on :
+Bevilacqua, Marco, et al. "Single-image super-resolution via linear mapping of interpolated self-examples." IEEE Transactions on Image Processing 23.12 (2014): 5334-5347.
 
 We create a two dictionaries of self example wavelet patches: a high resolution dictionary and a low resolution dictionary.
 The high resolution patches are sampled directly from the input image and the low resolution patches are sample from the input 
