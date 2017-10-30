@@ -132,3 +132,5 @@ int main()
 ## License
 
 This project is licensed under the terms of the MIT license.
+
+[1] Bevilacqua, Marco, et al. "Single-image super-resolution via linear mapping of interpolated self-examples." IEEE Transactions on Image Processing 23.12 (2014): 5334-5347.
